@@ -18,16 +18,14 @@ function createDreamTeam(members) {
     return false;
 
   const teamArr = [];
-  
   members.forEach(item => {
     if (typeof item === 'string') {
       teamArr.push(item.trim().charAt(0).toUpperCase());
-    }
+    };
   });
   const nameTeamSort = teamArr.sort();
-
   return nameTeamSort.join('');
-}
+};
 
 /*function createDreamTeam(members) {
   if (!Array.isArray(members)) {
