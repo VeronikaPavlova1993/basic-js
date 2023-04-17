@@ -27,20 +27,7 @@ function createDreamTeam(members) {
   return nameTeamSort.join('');
 };
 
-/*function createDreamTeam(members) {
-  if (!Array.isArray(members)) {
-    return false;
-  }
-  const teamArr = [];
-  members.forEach(member => {
-    if (typeof member === 'string') {
-      teamArr.push(member.trim().charAt(0).sort());
-    };
-    });
-    return teamArr.toUpperCase().join('');
-  }
-  
-*/
+
 module.exports = {
   createDreamTeam
 };
